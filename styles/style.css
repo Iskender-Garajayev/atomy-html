@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+/* Header section start */
+
+.logo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+}
+
+.header-container{
+  max-width: 100%;
+  height: 60px;
+  border-bottom: 2px black solid;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.header-container-inner{
+  max-width: 1150px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-inner-navbar ul li{
+  list-style: none;
+}
+.header-inner-navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.header-inner-navbar ul{
+  display: flex;
+  gap: 25px;
+}
+
+.header-inner-menu{
+  display: none;
+}
+
+/* Header section end */
+
+/* home section start */
+
+.home-container{
+  max-width: 100%;
+  height: 800px;
+}
+
+.home-container-inner{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* home section end */
+
+/* footer section start */
+
+.footer-container{
+  max-width: 100%;
+  height: 200px;
+}
+
+.footer-container-inner{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* footer section end */
+
+
+
+
+
+/* media query start */
+
+@media screen and (max-width: 992px) {
+  .header-container{
+    background-color: antiquewhite;
+    max-width: 100%;
+  }
+
+  .header-container-inner{
+    max-width: 850px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  /* header section start */
+  .header-container{
+    background-color: olivedrab;
+    max-width: 100%;
+    height: 40px;
+  }
+
+  .header-container-inner{
+    height: 40px;
+   
+  }
+
+  .logo{
+    font-size: 25px;
+  }
+
+  .header-inner-navbar{
+    display: none;
+  }
+
+  .header-inner-login{
+    display: none;
+  }
+
+  .header-inner-menu{
+    display: flex;
+  }
+
+
+
+  /* header section end */
+}
+
+/* media query end */
